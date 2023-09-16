@@ -1,5 +1,5 @@
 {
-  "homapage": "https://tam-sal.github.io/login-form",
+  "homapage": "https://tam-sal.github.io/controlled-login-spa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
