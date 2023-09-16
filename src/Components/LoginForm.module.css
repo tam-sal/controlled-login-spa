@@ -1,0 +1,152 @@
+.formContainer {
+  height: 33rem;
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+  -webkit-box-reflect: below 0.5px linear-gradient(transparent, transparent, rgba(1, 1, 32, 0.35));
+  user-select: none;
+  backdrop-filter: blur(11px) saturate(180%);
+  -webkit-backdrop-filter: blur(11px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.29);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+label,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -0.5em;
+  font-weight: 200;
+}
+
+input {
+  height: 2rem;
+  width: 20rem;
+  padding: 0.2em;
+  text-align: center;
+  border-radius: 0.5em;
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.submitBtn {
+  width: 21rem;
+  height: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  margin-top: 2rem;
+  border: 1px solid #02260b;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #d9dae8;
+  background-color: rgba(33, 225, 106, 0.712);
+  transition: all 0.5s ease-out;
+}
+
+.submitBtn:disabled {
+  background-color: rgb(218, 214, 214);
+  cursor: not-allowed;
+  color: rgb(153, 151, 151);
+  border: 1px solid grey;
+}
+
+.err {
+  height: 2.5rem;
+  color: rgb(10, 232, 239);
+  font-size: 0.75em;
+  text-align: center;
+  padding: .2em;
+  width: 21rem;
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+  .formContainer {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .mainTitle {
+    font-size: 1.5rem;
+  }
+
+  label,
+  button {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  .submitBtn {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .err {
+    font-size: 0.7rem;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (min-width: 481px) and (max-width: 912px) {
+  .formContainer {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .submitBtn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .err {
+    width: 100%;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 913px) and (max-width: 1368px) {
+  .formContainer {
+    width: 30%;
+    padding: 2rem;
+    height: 75vh;
+    padding: 0.5rem;
+  }
+
+  .mainTitle {
+    font-size: 1.5rem;
+
+  }
+
+  label,
+  button {
+    font-size: 1rem;
+    height: 0.1rem;
+  }
+
+  input {
+    height: 1rem;
+    font-size: 0.8rem;
+  }
+}
